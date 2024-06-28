@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url(assets/Stopbuck.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes progress {
+  from {
+    top: 0%;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../public/waw.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/waw.jpeg');
+  background-size: cover;
+  background-position: center;
+  animation: spin 20s linear infinite;
+}
+
+.App-header {
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'CustomFont', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.App-header.home {
+  justify-content: center;
+  gap: 5%;
+}
+
+h1 {
+  color: #EADC86;
+  margin: 0;
+}
+
+.App-header.home .small-text {
+  margin-top: 100px;
+}
+
+.large-text {
+  font-size: 8rem;
+}
+
+.small-text {
+  font-size: 3rem;
+}
+
+.custom-button {
+  margin-top: 20px;
+  padding: 38px 55px;
+  font-family: 'CustomFont', sans-serif;
+  font-size: 2rem;
+  color: #864B08;
+  background: url('assets/button.png') no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button-search {
+    padding: 20px 52px;
+  font-family: 'CustomFont', sans-serif;
+  font-size: 1.5rem;
+  color: #864B08;
+  background: url('assets/button.png') no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button-analyze {
+    padding: 20px 32px;
+  font-family: 'CustomFont', sans-serif;
+  font-size: 1.5rem;
+  color: #864B08;
+  background: url('assets/button.png') no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-button:hover,
+.custom-button-search:hover,
+.custom-button-analyze:hover {
+  filter: brightness(0.8);
+}
+
+.selected-image {
+  max-width: 100%;
+  max-height: 400px;
+  border: 2px solid #EADC86;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  animation: progress 1s ease-in-out alternate infinite;
+  z-index: 1;
+}
+
+.image-wrapper {
+  position: relative;
+}
