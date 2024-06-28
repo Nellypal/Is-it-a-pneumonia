@@ -5,11 +5,11 @@ This project aims to develop an AI model using PyTorch to classify lung X-ray im
 ## Project Structure
 
 - `data/`: Contains the training, validation, and test datasets.
-- `notebooks/`: Jupyter notebooks for experimentation and development.
-- `models/`: Trained models.
 - `src/`: Source code for data preprocessing, model definition, and training scripts.
+- `my-app`: front-end.
 - `requirements.txt`: List of dependencies.
-- `README.md`: Project documentation.
+-  `start.sh`: Start script.
+- `README.md`: Project documentation (here ^^).
 
 ## How to Run
 
